@@ -12,7 +12,15 @@ func main() {
 	// not ideal
 	// alex := person{"Alex", "Anderson"}
 
-	alex := person{firstName: "Alex", lastName: "Anderson"}
+	// alex := person{firstName: "Alex", lastName: "Anderson"}
 
-	fmt.Println(alex)
+	// fmt.Println(alex)
+
+	// automatically adds zero values not undefined 
+	var alex person
+
+	alex.firstName = "Alex"
+	alex.lastName = "Anderson"
+	
+	fmt.Printf("%+v", alex)
 }
